@@ -1,0 +1,9 @@
+> init
+<<<
++ k.txt notwug.txt
+> add k.txt
+<<<
+> commit "ioqhbkbus"
+<<<
++ o.txt wug.txt
+= k.txt notwug.txt

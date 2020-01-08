@@ -1,0 +1,9 @@
+> init
+<<<
++ w.txt notwug.txt
+> add w.txt
+<<<
+> commit "kadsjcvukyebe"
+<<<
++ a.txt wug.txt
+= w.txt notwug.txt

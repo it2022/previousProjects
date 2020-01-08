@@ -1,0 +1,7 @@
+# A simple test
+> init
+<<<
++ e.txt wug.txt
+> add e.txt
+<<<
+= e.txt wug.txt

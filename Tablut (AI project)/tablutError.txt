@@ -1,0 +1,128 @@
+GITBUG ERROR REPORT
+
+1. Type of operating system you are using to produce this error:
+
+MacOS IntelliJ
+
+
+
+2. Version of the Java system you are using (java -version).
+
+
+12
+
+
+3. Subdirectory of your Git working directory to use as the current
+   directory when compiling and running your program.
+
+repo/proj2
+
+
+4. EXACT sequence of commands that will cause the error you are seeing,
+   including anything needed to compile and execute the program.
+   It is NOT acceptable to say "any execution of the program fails"; give
+   us a specific one.
+
+#* java -ea tablut.Main
+# Immediate win for White.
+manual white
+seed 3959848
+limit 9
+a4-3
+e4-f
+b5-3
+e5-4
+b3-5
+auto white
+#*move/win+
+quit
+
+
+5. What you see when you execute the commands in 4.
+
+**** INPUT FILES:
++--- 01-forceWin-a-1.in ------------------------------------------+
+#* java -ea tablut.Main
+# Immediate win for White.
+manual white
+seed 3959848
+limit 9
+a4-3
+e4-f
+b5-3
+e5-4
+b3-5
+auto white
+#*move/win+
+quit
++-----------------------------------------------------------------+
+
+**** OUTPUTS FROM TEST PROGRAM:
++--- 01-forceWin-a-1.out -----------------------------------------+
++-----------------------------------------------------------------+
+
+**** EXPECTED OUTPUTS:
++--- 01-forceWin-a-1.std -----------------------------------------+
+* White wins.
++-----------------------------------------------------------------+
+
+**** ERROR OUTPUTS FROM TEST PROGRAM:
++--- 01-forceWin-a-1.err -----------------------------------------+
+Exception in thread "main" java.lang.AssertionError
+	at tablut.Board.makeMove(Board.java:266)
+	at tablut.Board.makeMove(Board.java:301)
+	at tablut.AI.findMove(AI.java:95)
+	at tablut.AI.findMove(AI.java:116)
+	at tablut.AI.findMove(AI.java:97)
+	at tablut.AI.findMove(AI.java:61)
+	at tablut.AI.myMove(AI.java:45)
+	at tablut.Controller.play(Controller.java:54)
+	at tablut.Main.main(Main.java:55)
+Program 1 ended with: terminated with java.lang.AssertionError
++-----------------------------------------------------------------+
+** End of 01-forceWin-a-1 error report **
+
+** 01-forceWin-b-1 FAILED (Program 1 ended with: terminated with java.lang.AssertionError)
+
+**** INPUT FILES:
++--- 01-forceWin-b-1.in ------------------------------------------+
+#* java -ea tablut.Main
+# Immediate win for Black.
+manual white
+seed 127986
+limit 9
+h5-4
+e4-b
+d1-4
+e5-4
+i6-f
+e4-g
+auto black
+#*move/win+
+quit
++-----------------------------------------------------------------+
+
+**** OUTPUTS FROM TEST PROGRAM:
++--- 01-forceWin-b-1.out -----------------------------------------+
++-----------------------------------------------------------------+
+
+**** EXPECTED OUTPUTS:
++--- 01-forceWin-b-1.std -----------------------------------------+
+* Black wins.
++-----------------------------------------------------------------+
+
+**** ERROR OUTPUTS FROM TEST PROGRAM:
++--- 01-forceWin-b-1.err -----------------------------------------+
+Exception in thread "main" java.lang.AssertionError
+	at tablut.Board.makeMove(Board.java:266)
+	at tablut.Board.makeMove(Board.java:301)
+	at tablut.AI.findMove(AI.java:95)
+	at tablut.AI.findMove(AI.java:116)
+	at tablut.AI.findMove(AI.java:61)
+	at tablut.AI.myMove(AI.java:45)
+	at tablut.Controller.play(Controller.java:56)
+	at tablut.Main.main(Main.java:55)
+Program 1 ended with: terminated with java.lang.AssertionError
+
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > 
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >

@@ -1,0 +1,9 @@
+> init
+<<<
++ h.txt notwug.txt
+> add h.txt
+<<<
+> commit "sdbiuee"
+<<<
++ y.txt wug.txt
+= h.txt notwug.txt

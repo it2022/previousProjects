@@ -1,0 +1,36 @@
+Gitlet Design Document
+----------------------
+@ian Tien
+I started with a simple sorting set algorithm
+
+Classes and Data Structures
+---------------------------
+sets
+arrays
+trees
+lists
+hashmaps
+iterators
+commits
+paths
+removal
+
+Algorithms
+----------
+
+bts
+djistrikas
+a star
+quick sort
+sorting
+
+Persistence
+-----------
+i need to work first on making my classes
+then i'll do the data structures
+then i'll do the functions
+then i'll figure out the algorithms
+then i'll do troubleshooting
+then i'll do error checks
+then i'll do the debugging
+then i'll do the rest
